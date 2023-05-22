@@ -43,8 +43,8 @@ const Stock = () => {
             <div className="main-container">
                 {users?.map((user: any, index: any) => (
                     <div className='container-1'>
-                        <b>Stock name :</b> {user.cname}<br />
-                        <b>Price :</b> {user.ltp}
+                        <img src={user.pic} className='userpicture'/>&nbsp;&nbsp;&nbsp;{user.cname}<br />
+                        <p className="price-div"/>{user.ltp}
                     </div>
                 ))}
             </div>
